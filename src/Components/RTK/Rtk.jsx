@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from './Cartslice';
 
 
-
 function Rtk() {
 
     const [products, setProducts] = useState([]);
@@ -148,7 +147,7 @@ function Rtk() {
                                                     onClick={() => dispatch(removeItem(product))}>
                                                     Remove from cart
                                                 </button>
-
+  
                                                 <div className='flex items-center justify-center gap-2'>
                                                     <div className='text-white text-[40px] cursor-pointer' onClick={() => setChange((change) => change + 1)}>+</div>
                                                     <div className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600">
@@ -156,12 +155,10 @@ function Rtk() {
                                                     </div>
                                                     <div className='text-white text-[40px] cursor-pointer' onClick={ change<=1 ? () => dispatch(removeItem(product)) : () => setChange((change) => change - 1)}>-</div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         )}
                     </div>}
