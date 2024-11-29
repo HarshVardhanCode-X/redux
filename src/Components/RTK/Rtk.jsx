@@ -153,6 +153,7 @@ function Rtk() {
                                                     <div className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600">
                                                         {change}
                                                     </div>
+                                                    <div></div>
                                                     <div className='text-white text-[40px] cursor-pointer' onClick={ change<=1 ? () => dispatch(removeItem(product)) : () => setChange((change) => change - 1)}>-</div>
                                                 </div>
                                             </div>

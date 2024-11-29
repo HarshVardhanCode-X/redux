@@ -10,13 +10,15 @@ function Home() {
     <>
     
       <div className='flex flex-col'>
-        <button onClick={()=>setCount((count)=>count+1)}>
-          Increase Count
+        <button onClick={()=>setCount(count=>count+1)}>
+          Increase
         </button>
-        <button onClick={count<=0 ? 0 :  ()=>setCount((count)=>count-1)}>
-          Decrease Count
+        <button onClick={count<=0 ? 0 : ()=>setCount(count=>count-1)}>
+          Decrease
         </button>
-        <button>Count is {count}</button>
+        <button>
+          Count is {count}
+        </button>
       </div>
       
     </>

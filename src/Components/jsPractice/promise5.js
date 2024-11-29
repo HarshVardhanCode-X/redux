@@ -12,4 +12,5 @@ const multipleAwait = async ()=>{
     console.log(promiseA)
     console.log(promiseB)
 }
+
 multipleAwait()

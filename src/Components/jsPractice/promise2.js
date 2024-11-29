@@ -1,11 +1,23 @@
+// function promise(number){
+//     return new Promise((resolve, reject) => {
+//         if(number%2==0){
+//             resolve("Even Number !")
+//         }else{
+//             reject("Odd Number !")
+//         }
+//     })
+// }
+
+// promise(8).then((result)=>console.log(result)).catch((error)=>console.log(error));
+
 function promise(number){
     return new Promise((resolve, reject) => {
-        if(number%2==0){
-            resolve("Even Number !")
-        }else{
-            reject("Odd Number !")
+        if (number%2==0){
+            resolve("Even Number!")
+        }
+        else{
+            reject("Odd Number!")
         }
     })
 }
-
-promise(8).then((result)=>console.log(result)).catch((error)=>console.log(error));
+promise(10).then((result)=>console.log(result)).catch((error)=>console.log(error));
